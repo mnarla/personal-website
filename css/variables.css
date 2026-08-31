@@ -1,0 +1,42 @@
+/* ==========================================================================
+   DESIGN TOKENS & VARIABLES
+   ========================================================================== */
+
+:root {
+  /* Color Story */
+  --bg-canvas: #121316;
+  --bg-card: #18191E;
+  --bg-surface: #1E2027;
+  --bg-surface-hover: #242731;
+  --bg-glass: rgba(18, 19, 23, 0.82);
+  --bg-glass-card: rgba(24, 25, 31, 0.65);
+  
+  /* Borders */
+  --border-subtle: #20222A;
+  --border-card: #282A34;
+  --border-highlight: #3D4150;
+  --border-glass: rgba(255, 255, 255, 0.08);
+
+  /* Primary Accent: Electric Crimson / Neon Ruby */
+  --accent: #FF1E56;
+  --accent-hover: #FF3B6F;
+  --accent-dim: rgba(255, 30, 86, 0.12);
+  --accent-glow: rgba(255, 30, 86, 0.25);
+  --accent-line: rgba(255, 30, 86, 0.6);
+
+  /* Typography Colors */
+  --text-headline: #F4F4F2;
+  --text-body: #9E9EA4;
+  --text-muted: #666872;
+  --text-accent: #FF1E56;
+
+  /* Typography Fonts */
+  --font-display: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Easing Physics */
+  --ease-snap: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 120ms var(--ease-snap);
+  --transition-normal: 220ms var(--ease-snap);
+}

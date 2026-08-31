@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank Narla — Neurosymbolic AI, Computer Vision & Systems</title>
+  <meta name="description" content="Personal portfolio and resume of Mayank Narla. UC Santa Cruz Computer Science researcher building neurosymbolic AI, computer vision pipelines, and real-time data systems.">
+  <meta name="theme-color" content="#121316">
+  
+  <!-- OpenGraph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mayank Narla — AI & Systems Engineer">
+  <meta property="og:description" content="Neurosymbolic AI, Computer Vision pipelines, and distributed data systems. UC Santa Cruz Computer Science.">
+  
+  <!-- Google Fonts: Barlow Condensed (Display), Plus Jakarta Sans (Body), JetBrains Mono (Telemetry) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="telemetry-theme">
+  <!-- Custom Kinetic Cursor -->
+  <div id="cursor-tracker" class="cursor-tracker" aria-hidden="true">
+    <span class="cursor-crosshair">+</span>
+    <span class="cursor-label"></span>
+  </div>
+
+  <!-- Telemetry HUD Header -->
+  <header id="telemetry-hud" class="telemetry-hud">
+    <div class="hud-progress-line" id="scroll-progress-line"></div>
+    <div class="hud-container">
+      <div class="hud-left">
+        <a href="#hero" class="hud-brand" aria-label="Mayank Narla Home">
+          <span class="hud-callsign">MN // 01</span>
+          <span class="hud-name">MAYANK NARLA</span>
+        </a>
+        <div class="hud-status-badge">
+          <span class="status-dot"></span>
+          <span class="status-text">AIEA LAB · LLM LOGIC RESEARCH</span>
+        </div>
+      </div>
+
+      <nav class="hud-nav" aria-label="Main Navigation">
+        <a href="#experience" class="hud-link"><span class="hud-num">01</span> EXPERIENCE</a>
+        <a href="#projects" class="hud-link"><span class="hud-num">02</span> PROJECTS</a>
+        <a href="#skills" class="hud-link"><span class="hud-num">03</span> STACK</a>
+        <a href="#contact" class="hud-link"><span class="hud-num">04</span> CONTACT</a>
+      </nav>
+
+      <div class="hud-right">
+        <div class="hud-telemetry-pill">
+          <span class="telemetry-label">LOC:</span>
+          <span class="telemetry-val">CA [PT]</span>
+          <span class="telemetry-time" id="live-pt-clock">--:--:--</span>
+        </div>
+        <a href="https://github.com/mnarla" target="_blank" rel="noopener noreferrer" class="hud-cta-btn" id="resume-quick-btn">
+          RESUME <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-main-column">
+          <div class="hero-badge-tag">
+            <span class="tag-accent-marker"></span>
+            <span>UCSC COMPUTER SCIENCE '28 · DEAN'S HONORS (3.81 GPA)</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line">MAYANK</span>
+            <span class="title-line highlight-stroke">NARLA</span>
+          </h1>
+
+          <p class="hero-statement">
+            Building <strong>neurosymbolic AI engines</strong>, real-time <strong>computer vision pipelines</strong>, and autonomous agent systems that prioritize logical grounding and high-velocity execution over brute force.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              EXPLORE SYSTEMS <span class="btn-arrow">↓</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              GET IN TOUCH <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Telemetry Stats & Metrics Display -->
+        <div class="hero-metrics-column">
+          <div class="metric-card metric-primary">
+            <div class="metric-header">
+              <span class="metric-code">METRIC // 01</span>
+              <span class="metric-tag">ACADEMIC EXCELLENCE</span>
+            </div>
+            <div class="metric-value-wrap">
+              <span class="metric-value" data-target="3.81" data-decimals="2">0.00</span>
+              <span class="metric-unit">GPA</span>
+            </div>
+            <div class="metric-footer">B.S. Computer Science · UC Santa Cruz</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-code">METRIC // 02</span>
+              <span class="metric-tag">LOCAL AGENTS</span>
+            </div>
+            <div class="metric-value-wrap">
+              <span class="metric-value" data-target="8" data-decimals="0">0</span>
+              <span class="metric-unit">B</span>
+            </div>
+            <div class="metric-footer">Qwen3 Local Agentic Pipeline with Self-Calibration</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-code">METRIC // 03</span>
+              <span class="metric-tag">ACCURACY & LOGIC</span>
+            </div>
+            <div class="metric-value-wrap">
+              <span class="metric-value" data-target="100" data-decimals="0">0</span>
+              <span class="metric-unit">%</span>
+            </div>
+            <div class="metric-footer">Neurosymbolic SWI-Prolog Deterministic Grounding</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kinetic Telemetry Ticker -->
+      <div class="hero-ticker-band" aria-hidden="true">
+        <div class="ticker-track">
+          <span>NEUROSYMBOLIC AI</span>
+          <span class="ticker-dot">✦</span>
+          <span>LANGGRAPH AGENTS</span>
+          <span class="ticker-dot">✦</span>
+          <span>ROCKET COMPUTER VISION</span>
+          <span class="ticker-dot">✦</span>
+          <span>TELEMETRY PREDICTION</span>
+          <span class="ticker-dot">✦</span>
+          <span>DISTRIBUTED KUBERNETES</span>
+          <span class="ticker-dot">✦</span>
+          <span>NEUROSYMBOLIC AI</span>
+          <span class="ticker-dot">✦</span>
+          <span>LANGGRAPH AGENTS</span>
+          <span class="ticker-dot">✦</span>
+          <span>ROCKET COMPUTER VISION</span>
+          <span class="ticker-dot">✦</span>
+          <span>TELEMETRY PREDICTION</span>
+          <span class="ticker-dot">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-meta">
+            <span class="section-index">01 //</span>
+            <span class="section-category">TRAJECTORY & TRACK RECORD</span>
+          </div>
+          <h2 class="section-title">ENGINEERING EXPERIENCE</h2>
+        </div>
+
+        <div class="experience-list">
+          <!-- Item 1: REC -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag">STARTUP ENGINEERING</span>
+                <h3 class="exp-role">Software Engineering Intern</h3>
+                <div class="exp-company">REC (My Recommendation)</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">JUN 2026 — PRESENT</span>
+                <span class="exp-loc">REMOTE</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                Shipping core full-stack features across the consumer mobile platform in Ruby on Rails and Flutter/Dart. Architected an autonomous AI content moderation pipeline with Sidekiq and Gemini API that completely eliminated manual admin backlog.
+              </p>
+              <div class="exp-stack">
+                <span class="stack-badge">Ruby on Rails</span>
+                <span class="stack-badge">Flutter</span>
+                <span class="stack-badge">Dart</span>
+                <span class="stack-badge">Sidekiq</span>
+                <span class="stack-badge">Gemini API</span>
+                <span class="stack-badge">Async Pipelines</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: AIEA Lab -->
+          <article class="exp-card highlight-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag accent-tag">AI RESEARCH</span>
+                <h3 class="exp-role">Researcher — LLM Logic Research</h3>
+                <div class="exp-company">AIEA Lab · UC Santa Cruz</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">MAR 2026 — PRESENT</span>
+                <span class="exp-loc">SANTA CRUZ, CA</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                Bridging natural language ambiguity and formal mathematical rigor. Engineered a neurosymbolic logical inference engine compiling raw language queries into formal SWI-Prolog constraints via LangGraph pipelines, executing distributed GPU jobs on the Nautilus Kubernetes cluster.
+              </p>
+              <div class="exp-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">LangGraph</span>
+                <span class="stack-badge">SWI-Prolog</span>
+                <span class="stack-badge">Janus</span>
+                <span class="stack-badge">RAG</span>
+                <span class="stack-badge">Kubernetes</span>
+                <span class="stack-badge">Nautilus Cluster</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Rocket Team -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag">AEROSPACE & VISION</span>
+                <h3 class="exp-role">Computer Vision Engineer</h3>
+                <div class="exp-company">UCSC Rocket Team</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">SEP 2025 — FEB 2026</span>
+                <span class="exp-loc">SANTA CRUZ, CA</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                Developed the spatial intelligence stack for landing localization. Engineered real-time homography matrix estimation and video stitching pipelines in Python and OpenCV to stitch turbulent onboard camera feeds during flight and recovery tracking.
+              </p>
+              <div class="exp-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">OpenCV</span>
+                <span class="stack-badge">Homography</span>
+                <span class="stack-badge">Video Stitching</span>
+                <span class="stack-badge">Spatial Geometry</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header-split">
+          <div>
+            <div class="section-meta">
+              <span class="section-index">02 //</span>
+              <span class="section-category">SELECTED SYSTEMS & CODE</span>
+            </div>
+            <h2 class="section-title">FEATURED WORK</h2>
+          </div>
+
+          <!-- Filter Switcher -->
+          <div class="project-filter-group" role="tablist" aria-label="Filter Projects">
+            <button class="filter-btn active" data-filter="all">ALL [04]</button>
+            <button class="filter-btn" data-filter="ai">AI / AGENTS</button>
+            <button class="filter-btn" data-filter="vision">COMPUTER VISION</button>
+            <button class="filter-btn" data-filter="telemetry">TELEMETRY & DATA</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 01: Formova (Lead with Range: CV + Pose Analysis) -->
+          <article class="project-card" data-category="vision ai">
+            <div class="project-card-header">
+              <div class="project-num-tag">SYS // 01 · COMPUTER VISION</div>
+              <div class="project-status-dot">ACTIVE</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <a href="https://github.com/mnarla/formova" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Formova <span class="card-arrow">↗</span>
+                </a>
+              </h3>
+              <p class="project-desc">
+                Real-time kinetic exercise form analysis engine utilizing MediaPipe pose estimation, spatial joint angle kinematics, and Gemini API conversational coaching for instantaneous biometric feedback.
+              </p>
+              <div class="project-metrics-row">
+                <div class="p-metric">
+                  <span class="p-metric-val">30+ FPS</span>
+                  <span class="p-metric-lbl">Pose Kinematics</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">0ms</span>
+                  <span class="p-metric-lbl">Local Inference Lag</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-tech-pills">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>MediaPipe</span>
+                <span>Gemini API</span>
+              </div>
+              <a href="https://github.com/mnarla/formova" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View Formova on GitHub">
+                GITHUB ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 02: Culler (Agentic Music Skip Predictor) -->
+          <article class="project-card" data-category="ai">
+            <div class="project-card-header">
+              <div class="project-num-tag">SYS // 02 · LOCAL AGENTIC ENGINE</div>
+              <div class="project-status-dot">ACTIVE</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <a href="https://github.com/mnarla/culler" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Culler <span class="card-arrow">↗</span>
+                </a>
+              </h3>
+              <p class="project-desc">
+                Local agentic curation engine powered by Qwen3 8B. Ingests Spotify & Last.fm streaming telemetry to predict track skips, featuring an automated self-calibration loop with error-based clustering for continuous rule refinement.
+              </p>
+              <div class="project-metrics-row">
+                <div class="p-metric">
+                  <span class="p-metric-val">Qwen3 8B</span>
+                  <span class="p-metric-lbl">Local LLM</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">CoT Logic</span>
+                  <span class="p-metric-lbl">Grounded Reasoning</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-tech-pills">
+                <span>Python</span>
+                <span>Qwen3 8B</span>
+                <span>SQLite</span>
+                <span>Spotify API</span>
+                <span>Last.fm</span>
+              </div>
+              <a href="https://github.com/mnarla/culler" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View Culler on GitHub">
+                GITHUB ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 03: WFM Sell-Timing Advisor -->
+          <article class="project-card" data-category="ai telemetry">
+            <div class="project-card-header">
+              <div class="project-num-tag">SYS // 03 · MULTI-NODE GRAPH</div>
+              <div class="project-status-dot">ACTIVE</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <a href="https://github.com/mnarla/wfmarket-advisor" target="_blank" rel="noopener noreferrer" class="project-link">
+                  WFM Market Advisor <span class="card-arrow">↗</span>
+                </a>
+              </h3>
+              <p class="project-desc">
+                Multi-node LangGraph pipeline (trend, vault, patch, and synthesis nodes) ingesting live in-game market telemetry to generate deterministic SELL/HOLD trading signals with zero-redundancy SQLite conditional caching.
+              </p>
+              <div class="project-metrics-row">
+                <div class="p-metric">
+                  <span class="p-metric-val">4 Nodes</span>
+                  <span class="p-metric-lbl">Graph Pipeline</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">-70%</span>
+                  <span class="p-metric-lbl">API Calls Saved</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-tech-pills">
+                <span>Python</span>
+                <span>LangGraph</span>
+                <span>SQLite Cache</span>
+                <span>Live Telemetry</span>
+              </div>
+              <a href="https://github.com/mnarla/wfmarket-advisor" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View WFM Advisor on GitHub">
+                GITHUB ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04: Paddock Scout (F1 Telemetry & ML) -->
+          <article class="project-card" data-category="telemetry ai">
+            <div class="project-card-header">
+              <div class="project-num-tag">SYS // 04 · MOTORSPORT TELEMETRY</div>
+              <div class="project-status-dot">ACTIVE</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <a href="https://github.com/mnarla/Paddock-Scout" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Paddock Scout <span class="card-arrow">↗</span>
+                </a>
+              </h3>
+              <p class="project-desc">
+                Regulation-aware F1 race prediction engine using temporally-weighted Random Forests and real-time telemetry ingestion. Features an autonomous news intelligence agent that scans technical upgrades to dynamically calibrate model weights.
+              </p>
+              <div class="project-metrics-row">
+                <div class="p-metric">
+                  <span class="p-metric-val">Random Forest</span>
+                  <span class="p-metric-lbl">Temporal Weights</span>
+                </div>
+                <div class="p-metric">
+                  <span class="p-metric-val">$0 API Cost</span>
+                  <span class="p-metric-lbl">Autonomous Agent</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-footer">
+              <div class="project-tech-pills">
+                <span>Python</span>
+                <span>Scikit-Learn</span>
+                <span>F1 Telemetry</span>
+                <span>Autonomous Scraping</span>
+                <span>CI/CD</span>
+              </div>
+              <a href="https://github.com/mnarla/Paddock-Scout" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View Paddock Scout on GitHub">
+                GITHUB ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Stack & Matrix -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-meta">
+            <span class="section-index">03 //</span>
+            <span class="section-category">COMPUTATIONAL STACK</span>
+          </div>
+          <h2 class="section-title">SYSTEMS & CAPABILITIES</h2>
+        </div>
+
+        <div class="skills-matrix-grid">
+          <!-- Col 1: Core Languages -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <span class="matrix-icon">01</span>
+              <h3>LANGUAGES</h3>
+            </div>
+            <ul class="matrix-list">
+              <li><span class="bullet">▸</span> Python <span class="skill-lvl">Primary</span></li>
+              <li><span class="bullet">▸</span> C / Assembly <span class="skill-lvl">RISC-V</span></li>
+              <li><span class="bullet">▸</span> Java</li>
+              <li><span class="bullet">▸</span> SQL <span class="skill-lvl">PostgreSQL / SQLite</span></li>
+              <li><span class="bullet">▸</span> Ruby</li>
+              <li><span class="bullet">▸</span> JavaScript / HTML / CSS</li>
+            </ul>
+          </div>
+
+          <!-- Col 2: AI, Logic & Agents -->
+          <div class="matrix-card highlight-matrix">
+            <div class="matrix-card-header">
+              <span class="matrix-icon">02</span>
+              <h3>AI & NEUROSYMBOLIC</h3>
+            </div>
+            <ul class="matrix-list">
+              <li><span class="bullet">▸</span> LangGraph & LangChain</li>
+              <li><span class="bullet">▸</span> SWI-Prolog & Janus</li>
+              <li><span class="bullet">▸</span> PyTorch & TensorFlow</li>
+              <li><span class="bullet">▸</span> Local Inference <span class="skill-lvl">Qwen3</span></li>
+              <li><span class="bullet">▸</span> RAG & Relevancy Scoring</li>
+              <li><span class="bullet">▸</span> Scikit-learn & Pandas</li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Vision & Spatial -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <span class="matrix-icon">03</span>
+              <h3>VISION & SPATIAL</h3>
+            </div>
+            <ul class="matrix-list">
+              <li><span class="bullet">▸</span> OpenCV</li>
+              <li><span class="bullet">▸</span> MediaPipe Pose Kinematics</li>
+              <li><span class="bullet">▸</span> Homography Estimation</li>
+              <li><span class="bullet">▸</span> Video Stitching Pipelines</li>
+              <li><span class="bullet">▸</span> CNNs & Image Classification</li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Infra & Distributed Systems -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <span class="matrix-icon">04</span>
+              <h3>INFRA & SYSTEMS</h3>
+            </div>
+            <ul class="matrix-list">
+              <li><span class="bullet">▸</span> Kubernetes & Nautilus Cluster</li>
+              <li><span class="bullet">▸</span> Ruby on Rails & Sidekiq</li>
+              <li><span class="bullet">▸</span> AWS & Google Cloud</li>
+              <li><span class="bullet">▸</span> Model Context Protocol (MCP)</li>
+              <li><span class="bullet">▸</span> Linux / Unix Shell & Git</li>
+              <li><span class="bullet">▸</span> Raspberry Pi Embedded</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comms & Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-header">
+            <div class="section-meta">
+              <span class="section-index">04 //</span>
+              <span class="section-category">COMMUNICATIONS & DISPATCH</span>
+            </div>
+            <h2 class="contact-headline">LET'S BUILD SOMETHING FAST & GROUNDED.</h2>
+            <p class="contact-sub">
+              Open to high-impact software engineering internships, AI research collaborations, and systems development.
+            </p>
+          </div>
+
+          <div class="contact-actions-grid">
+            <div class="contact-channel-card">
+              <div class="channel-label">DIRECT DISPATCH</div>
+              <div class="channel-value">narla.mayank@gmail.com</div>
+              <button class="btn btn-secondary btn-sm" id="copy-email-btn" data-email="narla.mayank@gmail.com">
+                <span id="copy-text">COPY EMAIL</span> <span class="btn-arrow">📋</span>
+              </button>
+            </div>
+
+            <div class="contact-channel-card">
+              <div class="channel-label">NETWORK TELEMETRY</div>
+              <div class="channel-links">
+                <a href="https://github.com/mnarla" target="_blank" rel="noopener noreferrer" class="channel-link-btn">
+                  GITHUB <span>↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mayank-narla-4761b4366" target="_blank" rel="noopener noreferrer" class="channel-link-btn">
+                  LINKEDIN <span>↗</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-channel-card">
+              <div class="channel-label">CREDENTIALS</div>
+              <div class="channel-value">Full CV / Experience History</div>
+              <a href="https://github.com/mnarla" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                VIEW RESUME <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer HUD -->
+  <footer class="hud-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span>MAYANK NARLA // DESIGNED WITH OBSIDIAN TELEMETRY ENGINE</span>
+      </div>
+      <div class="footer-right">
+        <span>SANTA CRUZ · PLEASANTON, CA</span>
+        <span class="footer-sep">/</span>
+        <span>2026 EDITION</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Email copied to clipboard!</div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
