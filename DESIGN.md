@@ -11,10 +11,10 @@ colors:
   border-card: "#282A34"
   border-highlight: "#3D4150"
   border-glass: "rgba(255, 255, 255, 0.08)"
-  accent: "#FF453A"
-  accent-hover: "#FF6259"
-  accent-dim: "rgba(255, 69, 58, 0.12)"
-  accent-glow: "rgba(255, 69, 58, 0.25)"
+  accent: "#FF2400"
+  accent-hover: "#FF4626"
+  accent-dim: "rgba(255, 36, 0, 0.12)"
+  accent-glow: "rgba(255, 36, 0, 0.25)"
   color-status-active: "#10B981"
   text-headline: "#F4F4F2"
   text-body: "#9E9EA4"
@@ -76,7 +76,7 @@ A high-velocity, motorsport-adjacent telemetry portfolio for Mayank Narla. Built
 
 - **Canvas Base (`#121316`):** Deep textured charcoal with a 48px hairline grid.
 - **Card Surfaces (`#18191E` & `#1E2027`):** Layered graphite planes providing visual hierarchy.
-- **Primary Accent (`#FF453A`):** Warm Friendly Scarlet Red used strictly for active indicators, progress metrics, and key CTAs (~5% visual ratio).
+- **Primary Accent (`#FF2400`):** Brilliant Scarlet Red used strictly for active indicators, progress metrics, and key CTAs (~5% visual ratio).
 - **Status Green (`#10B981`):** Active telemetry status signal.
 - **Text Layers:** Off-white (`#F4F4F2`) for maximum heading readability, muted slate (`#8E909B`) for accessible 4.7:1 WCAG AA contrast, and pure white (`#FFFFFF`) for inverted buttons.
 
