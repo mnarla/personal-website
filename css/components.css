@@ -6,10 +6,11 @@
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 12px 24px;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
   font-weight: 700;
   letter-spacing: 0.03em;
   border-radius: 0;
@@ -18,7 +19,7 @@
 
 .btn-primary {
   background: var(--accent);
-  color: #FFF;
+  color: var(--text-inverse);
   border: 1px solid var(--accent);
 }
 
@@ -37,13 +38,13 @@
 .btn-secondary:hover {
   background: var(--bg-surface);
   border-color: var(--border-highlight);
-  color: #FFF;
+  color: var(--text-inverse);
   transform: translateY(-1px);
 }
 
 .btn-sm {
   padding: 8px 16px;
-  font-size: 0.78rem;
+  font-size: var(--text-xs);
 }
 
 .btn-arrow {
@@ -64,29 +65,15 @@
   overflow: hidden;
 }
 
-.metric-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 100%;
-  background: transparent;
-  transition: background var(--transition-fast);
-}
-
 .metric-card:hover {
   background: var(--bg-surface);
   border-color: var(--border-highlight);
   transform: translateX(4px);
 }
 
-.metric-card:hover::before {
-  background: var(--accent);
-}
-
+/* Primary Metric: Technical top boundary accent rather than generic AI side-tab */
 .metric-primary {
-  border-left: 3px solid var(--accent);
+  border-top: 2px solid var(--accent);
   background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 30, 86, 0.03) 100%);
 }
 
@@ -99,14 +86,14 @@
 
 .metric-code {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: var(--text-2xs);
   color: var(--accent);
   font-weight: 700;
 }
 
 .metric-tag {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: var(--text-2xs);
   color: var(--text-muted);
   text-transform: uppercase;
 }
@@ -120,7 +107,7 @@
 
 .metric-value {
   font-family: var(--font-display);
-  font-size: 3.5rem;
+  font-size: var(--text-display-metric);
   font-weight: 900;
   line-height: 1;
   color: var(--text-headline);
@@ -129,13 +116,13 @@
 
 .metric-unit {
   font-family: var(--font-mono);
-  font-size: 1.1rem;
+  font-size: var(--text-md);
   font-weight: 700;
   color: var(--accent);
 }
 
 .metric-footer {
-  font-size: 0.85rem;
+  font-size: var(--text-sm);
   color: var(--text-body);
 }
 
@@ -155,7 +142,7 @@
   display: inline-flex;
   gap: 32px;
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: var(--text-sm);
   font-weight: 700;
   color: var(--text-muted);
   letter-spacing: 0.1em;
@@ -180,7 +167,7 @@
 
 .filter-btn {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   font-weight: 700;
   padding: 8px 14px;
   background: var(--bg-card);
@@ -196,6 +183,6 @@
 
 .filter-btn.active {
   background: var(--accent);
-  color: #FFF;
+  color: var(--text-inverse);
   border-color: var(--accent);
 }

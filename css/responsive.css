@@ -45,14 +45,55 @@
   .cursor-tracker {
     display: none;
   }
+
+  /* Accessible Touch Target Sizes (Minimum 44px for touchscreens) */
+  .filter-btn,
+  .btn-sm,
+  .hud-cta-btn,
+  .channel-link-btn,
+  .project-ext-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    touch-action: manipulation;
+  }
+
+  .project-footer {
+    gap: 16px;
+  }
 }
 
-/* Accessibility: Reduced Motion */
+/* ==========================================================================
+   Accessibility: Intentional prefers-reduced-motion
+   (Eliminates intense motion while preserving essential state transitions)
+   ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  html {
     scroll-behavior: auto !important;
+  }
+
+  /* Disable disorienting infinite loops & cursor tracking */
+  .ticker-track,
+  .status-dot {
+    animation: none !important;
+  }
+
+  .cursor-tracker {
+    display: none !important;
+  }
+
+  /* Eliminate motion-based translates while retaining accessible state changes (opacity & color) */
+  .btn,
+  .btn-arrow,
+  .metric-card,
+  .exp-card,
+  .project-card,
+  .card-arrow,
+  .matrix-card,
+  .toast {
+    transform: none !important;
+    transition: color 150ms ease, background-color 150ms ease, opacity 150ms ease, border-color 150ms ease !important;
   }
 }

@@ -17,6 +17,9 @@
   --border-highlight: #3D4150;
   --border-glass: rgba(255, 255, 255, 0.08);
 
+  /* Shadows */
+  --shadow-card-hover: 0 16px 32px rgba(0, 0, 0, 0.4);
+
   /* Primary Accent: Electric Crimson / Neon Ruby */
   --accent: #FF1E56;
   --accent-hover: #FF3B6F;
@@ -24,15 +27,34 @@
   --accent-glow: rgba(255, 30, 86, 0.25);
   --accent-line: rgba(255, 30, 86, 0.6);
 
-  /* Typography Colors */
+  /* Status Colors */
+  --color-status-active: #10B981;
+  --color-status-active-glow: rgba(16, 185, 129, 0.3);
+
+  /* Typography Colors (WCAG AA Compliant: contrast >= 4.5:1 on #121316) */
   --text-headline: #F4F4F2;
   --text-body: #9E9EA4;
-  --text-muted: #666872;
+  --text-muted: #8E909B;
   --text-accent: #FF1E56;
+  --text-inverse: #FFFFFF;
+
+  /* Typography Scale */
+  --text-2xs: 0.7rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.85rem;
+  --text-base: 1rem;
+  --text-md: 1.15rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.8rem;
+  --text-2xl: 2.2rem;
+  --text-display-metric: 3.5rem;
+  --text-display-section: clamp(2.5rem, 5vw, 4rem);
+  --text-display-hero: clamp(4.5rem, 9vw, 8rem);
+  --text-display-contact: clamp(2.2rem, 4.5vw, 3.8rem);
 
   /* Typography Fonts */
   --font-display: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Chivo', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Easing Physics */
