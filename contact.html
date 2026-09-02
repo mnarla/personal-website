@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Mayank Narla</title>
+  <meta name="description" content="Get in touch with Mayank Narla for software engineering internships, AI research collaborations, and systems development.">
+  <meta name="theme-color" content="#121316">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Chivo:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="telemetry-theme">
+  <!-- Custom Kinetic Cursor -->
+  <div id="cursor-tracker" class="cursor-tracker" aria-hidden="true">
+    <span class="cursor-crosshair">•</span>
+    <span class="cursor-label"></span>
+  </div>
+
+  <!-- Header HUD -->
+  <header id="telemetry-hud" class="telemetry-hud">
+    <div class="hud-progress-line" id="scroll-progress-line"></div>
+    <div class="hud-container">
+      <div class="hud-left">
+        <a href="index.html" class="hud-brand" aria-label="Mayank Narla Home">
+          <span class="hud-name">MAYANK NARLA</span>
+        </a>
+        <div class="hud-status-badge">
+          <span class="status-dot"></span>
+          <span class="status-text">AIEA LAB · LLM LOGIC RESEARCH</span>
+        </div>
+      </div>
+
+      <nav class="hud-nav" aria-label="Main Navigation">
+        <a href="index.html" class="hud-link">HOME</a>
+        <a href="about.html" class="hud-link">ABOUT</a>
+        <a href="projects.html" class="hud-link">PROJECTS</a>
+        <a href="resume.html" class="hud-link">RESUME</a>
+        <a href="contact.html" class="hud-link active">CONTACT</a>
+      </nav>
+
+      <div class="hud-right">
+        <a href="Mayank_Narla_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hud-cta-btn" id="resume-quick-btn">
+          RESUME PDF <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section contact-section" style="padding-top: 140px; min-height: 80vh;">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-header">
+            <div class="section-meta">
+              <span class="section-category">GET IN TOUCH</span>
+            </div>
+            <h1 class="contact-headline">LET'S CONNECT.</h1>
+            <p class="contact-sub">
+              Open to high-impact software engineering internships, AI research collaborations, and systems development. Reach out directly via email or connect on GitHub and LinkedIn.
+            </p>
+          </div>
+
+          <div class="contact-actions-grid">
+            <div class="contact-channel-card">
+              <div class="channel-value">narla.mayank@gmail.com</div>
+              <button class="btn btn-secondary btn-sm" id="copy-email-btn" data-email="narla.mayank@gmail.com">
+                <span id="copy-text">COPY EMAIL</span> <span class="btn-arrow">📋</span>
+              </button>
+            </div>
+
+            <div class="contact-channel-card">
+              <div class="channel-links">
+                <a href="https://github.com/mnarla" target="_blank" rel="noopener noreferrer" class="channel-link-btn">
+                  GITHUB <span>↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mayank-narla-4761b4366" target="_blank" rel="noopener noreferrer" class="channel-link-btn">
+                  LINKEDIN <span>↗</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-channel-card">
+              <div class="channel-value">Full CV / Resume</div>
+              <a href="Mayank_Narla_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                VIEW RESUME (PDF) <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="hud-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span>MAYANK NARLA</span>
+      </div>
+      <div class="footer-right">
+        <span>SANTA CRUZ · PLEASANTON, CA</span>
+        <span class="footer-sep">/</span>
+        <span>2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Email copied to clipboard!</div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

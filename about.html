@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Mayank Narla</title>
+  <meta name="description" content="Background, engineering experience, and technical skills of Mayank Narla. UC Santa Cruz Computer Science researcher building neurosymbolic AI and systems.">
+  <meta name="theme-color" content="#121316">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Chivo:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="telemetry-theme">
+  <!-- Custom Kinetic Cursor -->
+  <div id="cursor-tracker" class="cursor-tracker" aria-hidden="true">
+    <span class="cursor-crosshair">•</span>
+    <span class="cursor-label"></span>
+  </div>
+
+  <!-- Header HUD -->
+  <header id="telemetry-hud" class="telemetry-hud">
+    <div class="hud-progress-line" id="scroll-progress-line"></div>
+    <div class="hud-container">
+      <div class="hud-left">
+        <a href="index.html" class="hud-brand" aria-label="Mayank Narla Home">
+          <span class="hud-name">MAYANK NARLA</span>
+        </a>
+        <div class="hud-status-badge">
+          <span class="status-dot"></span>
+          <span class="status-text">AIEA LAB · LLM LOGIC RESEARCH</span>
+        </div>
+      </div>
+
+      <nav class="hud-nav" aria-label="Main Navigation">
+        <a href="index.html" class="hud-link">HOME</a>
+        <a href="about.html" class="hud-link active">ABOUT</a>
+        <a href="projects.html" class="hud-link">PROJECTS</a>
+        <a href="resume.html" class="hud-link">RESUME</a>
+        <a href="contact.html" class="hud-link">CONTACT</a>
+      </nav>
+
+      <div class="hud-right">
+        <a href="Mayank_Narla_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hud-cta-btn" id="resume-quick-btn">
+          RESUME PDF <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- About Intro Section -->
+    <section class="section hero-section">
+      <div class="container">
+        <div class="section-meta">
+          <span class="section-category">BACKGROUND & PHILOSOPHY</span>
+        </div>
+        <h1 class="section-title">ABOUT ME</h1>
+        <p class="hero-statement" style="max-width: 800px; margin-top: 16px;">
+          I'm a Computer Science student at <strong>UC Santa Cruz ('28, Dean's Honors)</strong> focused on <strong>neurosymbolic AI</strong>, distributed systems, and real-time computer vision. I bridge formal logic and probabilistic language models to build software that is rigorously grounded, verifiable, and fast.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-meta">
+            <span class="section-category">WHERE I'VE WORKED</span>
+          </div>
+          <h2 class="section-title">EXPERIENCE</h2>
+        </div>
+
+        <div class="experience-list">
+          <!-- Item 1: REC -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag">ENGINEERING</span>
+                <h3 class="exp-role">Software Engineering Intern</h3>
+                <div class="exp-company">REC (My Recommendation)</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">JUN 2026 — PRESENT</span>
+                <span class="exp-loc">REMOTE</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                Shipping core full-stack features across the consumer mobile platform in Ruby on Rails and Flutter/Dart. Architected an autonomous AI content moderation pipeline with Sidekiq and Gemini API that completely eliminated manual admin backlog.
+              </p>
+              <div class="exp-stack">
+                <span class="stack-badge">Ruby on Rails</span>
+                <span class="stack-badge">Flutter</span>
+                <span class="stack-badge">Dart</span>
+                <span class="stack-badge">Sidekiq</span>
+                <span class="stack-badge">Gemini API</span>
+                <span class="stack-badge">Async Pipelines</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: AIEA Lab -->
+          <article class="exp-card highlight-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag accent-tag">RESEARCH</span>
+                <h3 class="exp-role">Researcher — LLM Logic Research</h3>
+                <div class="exp-company">AIEA Lab · UC Santa Cruz</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">MAR 2026 — PRESENT</span>
+                <span class="exp-loc">SANTA CRUZ, CA</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                Bridging natural language ambiguity and formal mathematical rigor. Engineered a neurosymbolic logical inference engine compiling raw language queries into formal SWI-Prolog constraints via LangGraph pipelines, executing distributed GPU jobs on the Nautilus Kubernetes cluster.
+              </p>
+              <div class="exp-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">LangGraph</span>
+                <span class="stack-badge">SWI-Prolog</span>
+                <span class="stack-badge">Janus</span>
+                <span class="stack-badge">RAG</span>
+                <span class="stack-badge">Kubernetes</span>
+                <span class="stack-badge">Nautilus Cluster</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Rocket Team -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag">COMPUTER VISION</span>
+                <h3 class="exp-role">Computer Vision Engineer</h3>
+                <div class="exp-company">UCSC Rocket Team</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">SEP 2025 — FEB 2026</span>
+                <span class="exp-loc">SANTA CRUZ, CA</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                Developed the spatial intelligence stack for landing localization. Engineered real-time homography matrix estimation and video stitching pipelines in Python and OpenCV to stitch turbulent onboard camera feeds during flight and recovery tracking.
+              </p>
+              <div class="exp-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">OpenCV</span>
+                <span class="stack-badge">Homography</span>
+                <span class="stack-badge">Video Stitching</span>
+                <span class="stack-badge">Spatial Geometry</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-meta">
+            <span class="section-category">STACK</span>
+          </div>
+          <h2 class="section-title">TECH STACK</h2>
+        </div>
+
+        <div class="skills-matrix-grid">
+          <!-- Col 1: Core Languages -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <h3>LANGUAGES</h3>
+            </div>
+            <ul class="matrix-list">
+              <li>Python <span class="skill-lvl">Primary</span></li>
+              <li>C / Assembly <span class="skill-lvl">RISC-V</span></li>
+              <li>Java</li>
+              <li>SQL <span class="skill-lvl">PostgreSQL / SQLite</span></li>
+              <li>Ruby</li>
+              <li>JavaScript / HTML / CSS</li>
+            </ul>
+          </div>
+
+          <!-- Col 2: AI, Logic & Agents -->
+          <div class="matrix-card highlight-matrix">
+            <div class="matrix-card-header">
+              <h3>AI & NEUROSYMBOLIC</h3>
+            </div>
+            <ul class="matrix-list">
+              <li>LangGraph & LangChain</li>
+              <li>SWI-Prolog & Janus</li>
+              <li>PyTorch & TensorFlow</li>
+              <li>Local Inference <span class="skill-lvl">Qwen3</span></li>
+              <li>RAG & Relevancy Scoring</li>
+              <li>Scikit-learn & Pandas</li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Vision & Spatial -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <h3>VISION & SPATIAL</h3>
+            </div>
+            <ul class="matrix-list">
+              <li>OpenCV</li>
+              <li>MediaPipe Pose Kinematics</li>
+              <li>Homography Estimation</li>
+              <li>Video Stitching Pipelines</li>
+              <li>CNNs & Image Classification</li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Infra & Distributed Systems -->
+          <div class="matrix-card">
+            <div class="matrix-card-header">
+              <h3>INFRA & SYSTEMS</h3>
+            </div>
+            <ul class="matrix-list">
+              <li>Kubernetes & Nautilus Cluster</li>
+              <li>Ruby on Rails & Sidekiq</li>
+              <li>AWS & Google Cloud</li>
+              <li>Model Context Protocol (MCP)</li>
+              <li>Linux / Unix Shell & Git</li>
+              <li>Raspberry Pi Embedded</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="hud-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span>MAYANK NARLA</span>
+      </div>
+      <div class="footer-right">
+        <span>SANTA CRUZ · PLEASANTON, CA</span>
+        <span class="footer-sep">/</span>
+        <span>2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

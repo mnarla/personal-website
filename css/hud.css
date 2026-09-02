@@ -116,6 +116,22 @@
   color: var(--text-headline);
 }
 
+.hud-link.active {
+  color: var(--accent);
+  font-weight: 700;
+  position: relative;
+}
+
+.hud-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+}
+
 .hud-right {
   display: flex;
   align-items: center;

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Mayank Narla</title>
+  <meta name="description" content="Resume and curriculum vitae of Mayank Narla. UC Santa Cruz Computer Science. Neurosymbolic AI, Computer Vision, and Systems Engineering.">
+  <meta name="theme-color" content="#121316">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Chivo:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="telemetry-theme">
+  <!-- Custom Kinetic Cursor -->
+  <div id="cursor-tracker" class="cursor-tracker" aria-hidden="true">
+    <span class="cursor-crosshair">•</span>
+    <span class="cursor-label"></span>
+  </div>
+
+  <!-- Header HUD -->
+  <header id="telemetry-hud" class="telemetry-hud">
+    <div class="hud-progress-line" id="scroll-progress-line"></div>
+    <div class="hud-container">
+      <div class="hud-left">
+        <a href="index.html" class="hud-brand" aria-label="Mayank Narla Home">
+          <span class="hud-name">MAYANK NARLA</span>
+        </a>
+        <div class="hud-status-badge">
+          <span class="status-dot"></span>
+          <span class="status-text">AIEA LAB · LLM LOGIC RESEARCH</span>
+        </div>
+      </div>
+
+      <nav class="hud-nav" aria-label="Main Navigation">
+        <a href="index.html" class="hud-link">HOME</a>
+        <a href="about.html" class="hud-link">ABOUT</a>
+        <a href="projects.html" class="hud-link">PROJECTS</a>
+        <a href="resume.html" class="hud-link active">RESUME</a>
+        <a href="contact.html" class="hud-link">CONTACT</a>
+      </nav>
+
+      <div class="hud-right">
+        <a href="Mayank_Narla_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hud-cta-btn" id="resume-quick-btn">
+          DOWNLOAD PDF <span class="btn-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section" style="padding-top: 140px;">
+      <div class="container">
+        <div class="section-header-split">
+          <div>
+            <div class="section-meta">
+              <span class="section-category">CREDENTIALS & HISTORY</span>
+            </div>
+            <h1 class="section-title">CURRICULUM VITAE</h1>
+          </div>
+          <div>
+            <a href="Mayank_Narla_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" download="Mayank_Narla_Resume.pdf">
+              DOWNLOAD PDF <span class="btn-arrow">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="experience-list" style="margin-top: 32px;">
+          <!-- Education Card -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag">EDUCATION</span>
+                <h2 class="exp-role">B.S. in Computer Science</h2>
+                <div class="exp-company">University of California, Santa Cruz</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">EXPECTED JUN 2028</span>
+                <span class="exp-loc">DEAN'S HONORS</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                Core coursework: Data Structures & Algorithms, Computer Systems & Assembly Language (RISC-V), Discrete Mathematics, Principles of Programming Languages, Distributed Systems.
+              </p>
+            </div>
+          </article>
+
+          <!-- Experience 1: REC -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag">INDUSTRY EXPERIENCE</span>
+                <h2 class="exp-role">Software Engineering Intern</h2>
+                <div class="exp-company">REC (My Recommendation)</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">JUN 2026 — PRESENT</span>
+                <span class="exp-loc">REMOTE</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                • Engineered full-stack production features across consumer mobile platforms using Ruby on Rails and Flutter/Dart.<br>
+                • Designed an automated asynchronous content moderation pipeline with Sidekiq and Gemini API, eliminating manual review bottlenecks.
+              </p>
+              <div class="exp-stack">
+                <span class="stack-badge">Ruby on Rails</span>
+                <span class="stack-badge">Flutter</span>
+                <span class="stack-badge">Sidekiq</span>
+                <span class="stack-badge">Gemini API</span>
+                <span class="stack-badge">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 2: AIEA Lab -->
+          <article class="exp-card highlight-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag accent-tag">RESEARCH</span>
+                <h2 class="exp-role">Undergraduate AI Researcher</h2>
+                <div class="exp-company">AIEA Lab · UC Santa Cruz</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">MAR 2026 — PRESENT</span>
+                <span class="exp-loc">SANTA CRUZ, CA</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                • Developing neurosymbolic reasoning frameworks combining Large Language Models with SWI-Prolog via Janus.<br>
+                • Constructing multi-actor LangGraph agent workflows to translate natural language into formally verifiable first-order logic programs.<br>
+                • Deploying distributed model training and evaluation jobs across the Nautilus Kubernetes cluster.
+              </p>
+              <div class="exp-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">SWI-Prolog</span>
+                <span class="stack-badge">LangGraph</span>
+                <span class="stack-badge">Janus</span>
+                <span class="stack-badge">Kubernetes</span>
+                <span class="stack-badge">PyTorch</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Experience 3: Rocket Team -->
+          <article class="exp-card">
+            <div class="exp-header">
+              <div class="exp-role-wrap">
+                <span class="exp-tag">AEROSPACE ENGINEERING</span>
+                <h2 class="exp-role">Computer Vision Engineer</h2>
+                <div class="exp-company">UCSC Rocket Team</div>
+              </div>
+              <div class="exp-period">
+                <span class="exp-date">SEP 2025 — FEB 2026</span>
+                <span class="exp-loc">SANTA CRUZ, CA</span>
+              </div>
+            </div>
+            <div class="exp-body">
+              <p class="exp-human-summary">
+                • Built computer vision pipeline for real-time aerial footage homography estimation and video stitching.<br>
+                • Implemented feature extraction and perspective transforms in Python/OpenCV for landing site localization.
+              </p>
+              <div class="exp-stack">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">OpenCV</span>
+                <span class="stack-badge">Homography</span>
+                <span class="stack-badge">Video Stitching</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Embedded PDF Viewer Option -->
+        <div style="margin-top: 48px; border: 1px solid var(--border-card); background: var(--bg-card); padding: 24px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <span style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-muted);">EMBEDDED PREVIEW // Mayank_Narla_Resume.pdf</span>
+            <a href="Mayank_Narla_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">OPEN FULLSCREEN ↗</a>
+          </div>
+          <iframe src="Mayank_Narla_Resume.pdf" style="width: 100%; height: 700px; border: 1px solid var(--border-subtle); background: #fff;" title="Mayank Narla Resume PDF"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="hud-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span>MAYANK NARLA</span>
+      </div>
+      <div class="footer-right">
+        <span>SANTA CRUZ · PLEASANTON, CA</span>
+        <span class="footer-sep">/</span>
+        <span>2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

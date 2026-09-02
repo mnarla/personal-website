@@ -3,16 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mayank Narla — Neurosymbolic AI, Computer Vision & Systems</title>
-  <meta name="description" content="Personal portfolio and resume of Mayank Narla. UC Santa Cruz Computer Science researcher building neurosymbolic AI, computer vision pipelines, and real-time data systems.">
+  <title>Projects — Mayank Narla</title>
+  <meta name="description" content="Selected software engineering projects, autonomous agents, and telemetry systems built by Mayank Narla.">
   <meta name="theme-color" content="#121316">
   
-  <!-- OpenGraph / Social -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Mayank Narla — AI & Systems Engineer">
-  <meta property="og:description" content="Neurosymbolic AI, Computer Vision pipelines, and distributed data systems. UC Santa Cruz Computer Science.">
-  
-  <!-- Google Fonts: Barlow Condensed (Display), Chivo (Body), JetBrains Mono (Telemetry) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Chivo:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,7 +25,7 @@
     <div class="hud-progress-line" id="scroll-progress-line"></div>
     <div class="hud-container">
       <div class="hud-left">
-        <a href="#hero" class="hud-brand" aria-label="Mayank Narla Home">
+        <a href="index.html" class="hud-brand" aria-label="Mayank Narla Home">
           <span class="hud-name">MAYANK NARLA</span>
         </a>
         <div class="hud-status-badge">
@@ -41,9 +35,9 @@
       </div>
 
       <nav class="hud-nav" aria-label="Main Navigation">
-        <a href="index.html" class="hud-link active">HOME</a>
+        <a href="index.html" class="hud-link">HOME</a>
         <a href="about.html" class="hud-link">ABOUT</a>
-        <a href="projects.html" class="hud-link">PROJECTS</a>
+        <a href="projects.html" class="hud-link active">PROJECTS</a>
         <a href="resume.html" class="hud-link">RESUME</a>
         <a href="contact.html" class="hud-link">CONTACT</a>
       </nav>
@@ -57,195 +51,15 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
-    <section id="hero" class="section hero-section">
-      <div class="container hero-grid">
-        <div class="hero-main-column">
-          <div class="hero-badge-tag">
-            <span class="tag-accent-marker"></span>
-            <span>UCSC COMPUTER SCIENCE '28 · DEAN'S HONORS</span>
-          </div>
-
-          <h1 class="hero-title">
-            <span class="title-line">MAYANK</span>
-            <span class="title-line highlight-stroke">NARLA</span>
-          </h1>
-
-          <p class="hero-statement">
-            Building <strong>neurosymbolic AI engines</strong>, real-time <strong>computer vision pipelines</strong>, and autonomous agent systems that prioritize logical grounding and high-velocity execution over brute force.
-          </p>
-
-          <div class="hero-actions">
-            <a href="projects.html" class="btn btn-primary">
-              VIEW WORK <span class="btn-arrow">→</span>
-            </a>
-            <a href="contact.html" class="btn btn-secondary">
-              GET IN TOUCH <span class="btn-arrow">→</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Grounded Experience Highlights -->
-        <div class="hero-metrics-column">
-          <div class="metric-card metric-primary">
-            <div class="metric-header">
-              <span class="metric-tag">RESEARCH</span>
-            </div>
-            <div class="metric-focus-title">AIEA Lab · UC Santa Cruz</div>
-            <div class="metric-footer">Compiling natural language to formal SWI-Prolog constraints via LangGraph on Kubernetes.</div>
-          </div>
-
-          <div class="metric-card">
-            <div class="metric-header">
-              <span class="metric-tag">ENGINEERING</span>
-            </div>
-            <div class="metric-focus-title">REC (My Recommendation)</div>
-            <div class="metric-footer">Shipping consumer features in Rails & Flutter, plus automated async content moderation with Gemini API.</div>
-          </div>
-
-          <div class="metric-card">
-            <div class="metric-header">
-              <span class="metric-tag">COMPUTER VISION</span>
-            </div>
-            <div class="metric-focus-title">UCSC Rocket Team</div>
-            <div class="metric-footer">Real-time OpenCV homography matrix estimation and video stitching for rocket landing localization.</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Ticker Band -->
-      <div class="hero-ticker-band" aria-hidden="true">
-        <div class="ticker-track">
-          <span>NEUROSYMBOLIC AI</span>
-          <span class="ticker-dot">/</span>
-          <span>LANGGRAPH AGENTS</span>
-          <span class="ticker-dot">/</span>
-          <span>ROCKET COMPUTER VISION</span>
-          <span class="ticker-dot">/</span>
-          <span>TELEMETRY PREDICTION</span>
-          <span class="ticker-dot">/</span>
-          <span>DISTRIBUTED KUBERNETES</span>
-          <span class="ticker-dot">/</span>
-          <span>NEUROSYMBOLIC AI</span>
-          <span class="ticker-dot">/</span>
-          <span>LANGGRAPH AGENTS</span>
-          <span class="ticker-dot">/</span>
-          <span>ROCKET COMPUTER VISION</span>
-          <span class="ticker-dot">/</span>
-          <span>TELEMETRY PREDICTION</span>
-          <span class="ticker-dot">/</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section experience-section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-meta">
-            <span class="section-category">WHERE I'VE WORKED</span>
-          </div>
-          <h2 class="section-title">EXPERIENCE</h2>
-        </div>
-
-        <div class="experience-list">
-          <!-- Item 1: REC -->
-          <article class="exp-card">
-            <div class="exp-header">
-              <div class="exp-role-wrap">
-                <span class="exp-tag">ENGINEERING</span>
-                <h3 class="exp-role">Software Engineering Intern</h3>
-                <div class="exp-company">REC (My Recommendation)</div>
-              </div>
-              <div class="exp-period">
-                <span class="exp-date">JUN 2026 — PRESENT</span>
-                <span class="exp-loc">REMOTE</span>
-              </div>
-            </div>
-            <div class="exp-body">
-              <p class="exp-human-summary">
-                Shipping core full-stack features across the consumer mobile platform in Ruby on Rails and Flutter/Dart. Architected an autonomous AI content moderation pipeline with Sidekiq and Gemini API that completely eliminated manual admin backlog.
-              </p>
-              <div class="exp-stack">
-                <span class="stack-badge">Ruby on Rails</span>
-                <span class="stack-badge">Flutter</span>
-                <span class="stack-badge">Dart</span>
-                <span class="stack-badge">Sidekiq</span>
-                <span class="stack-badge">Gemini API</span>
-                <span class="stack-badge">Async Pipelines</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 2: AIEA Lab -->
-          <article class="exp-card highlight-card">
-            <div class="exp-header">
-              <div class="exp-role-wrap">
-                <span class="exp-tag accent-tag">RESEARCH</span>
-                <h3 class="exp-role">Researcher — LLM Logic Research</h3>
-                <div class="exp-company">AIEA Lab · UC Santa Cruz</div>
-              </div>
-              <div class="exp-period">
-                <span class="exp-date">MAR 2026 — PRESENT</span>
-                <span class="exp-loc">SANTA CRUZ, CA</span>
-              </div>
-            </div>
-            <div class="exp-body">
-              <p class="exp-human-summary">
-                Bridging natural language ambiguity and formal mathematical rigor. Engineered a neurosymbolic logical inference engine compiling raw language queries into formal SWI-Prolog constraints via LangGraph pipelines, executing distributed GPU jobs on the Nautilus Kubernetes cluster.
-              </p>
-              <div class="exp-stack">
-                <span class="stack-badge">Python</span>
-                <span class="stack-badge">LangGraph</span>
-                <span class="stack-badge">SWI-Prolog</span>
-                <span class="stack-badge">Janus</span>
-                <span class="stack-badge">RAG</span>
-                <span class="stack-badge">Kubernetes</span>
-                <span class="stack-badge">Nautilus Cluster</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 3: Rocket Team -->
-          <article class="exp-card">
-            <div class="exp-header">
-              <div class="exp-role-wrap">
-                <span class="exp-tag">COMPUTER VISION</span>
-                <h3 class="exp-role">Computer Vision Engineer</h3>
-                <div class="exp-company">UCSC Rocket Team</div>
-              </div>
-              <div class="exp-period">
-                <span class="exp-date">SEP 2025 — FEB 2026</span>
-                <span class="exp-loc">SANTA CRUZ, CA</span>
-              </div>
-            </div>
-            <div class="exp-body">
-              <p class="exp-human-summary">
-                Developed the spatial intelligence stack for landing localization. Engineered real-time homography matrix estimation and video stitching pipelines in Python and OpenCV to stitch turbulent onboard camera feeds during flight and recovery tracking.
-              </p>
-              <div class="exp-stack">
-                <span class="stack-badge">Python</span>
-                <span class="stack-badge">OpenCV</span>
-                <span class="stack-badge">Homography</span>
-                <span class="stack-badge">Video Stitching</span>
-                <span class="stack-badge">Spatial Geometry</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Selected Projects Section (The ONE section with 01 // numbering) -->
-    <section id="projects" class="section projects-section">
+    <!-- Projects Section -->
+    <section class="section projects-section" style="padding-top: 140px;">
       <div class="container">
         <div class="section-header-split">
           <div>
             <div class="section-meta">
-              <span class="section-index">01 //</span>
-              <span class="section-category">PROJECTS</span>
+              <span class="section-category">DEPLOYED SYSTEMS</span>
             </div>
-            <h2 class="section-title">FEATURED WORK</h2>
+            <h1 class="section-title">FEATURED PROJECTS</h1>
           </div>
 
           <!-- Filter Switcher -->
@@ -263,11 +77,11 @@
               <div class="project-num-tag">LOCAL AGENT</div>
             </div>
             <div class="project-body">
-              <h3 class="project-title">
+              <h2 class="project-title">
                 <a href="https://github.com/mnarla/culler" target="_blank" rel="noopener noreferrer" class="project-link">
                   Culler <span class="card-arrow">↗</span>
                 </a>
-              </h3>
+              </h2>
               <p class="project-desc">
                 Local agentic curation engine powered by Qwen3 8B. Ingests Spotify & Last.fm streaming telemetry to predict track skips, featuring an automated self-calibration loop with error-based clustering for continuous rule refinement.
               </p>
@@ -335,17 +149,17 @@
             </div>
           </article>
 
-          <!-- Project 03: WFM Sell-Timing Advisor -->
+          <!-- Project 02: WFM Sell-Timing Advisor -->
           <article class="project-card" data-category="ai telemetry">
             <div class="project-card-header">
               <div class="project-num-tag">LANGGRAPH PIPELINE</div>
             </div>
             <div class="project-body">
-              <h3 class="project-title">
+              <h2 class="project-title">
                 <a href="https://github.com/mnarla/wfmarket-advisor" target="_blank" rel="noopener noreferrer" class="project-link">
                   WFM Market Advisor <span class="card-arrow">↗</span>
                 </a>
-              </h3>
+              </h2>
               <p class="project-desc">
                 Multi-node LangGraph pipeline (trend, vault, patch, and synthesis nodes) ingesting live in-game market telemetry to generate deterministic SELL/HOLD trading signals with zero-redundancy SQLite conditional caching.
               </p>
@@ -412,17 +226,17 @@
             </div>
           </article>
 
-          <!-- Project 04: Paddock Scout -->
+          <!-- Project 03: Paddock Scout -->
           <article class="project-card" data-category="telemetry ai">
             <div class="project-card-header">
               <div class="project-num-tag">TELEMETRY & ML</div>
             </div>
             <div class="project-body">
-              <h3 class="project-title">
+              <h2 class="project-title">
                 <a href="https://github.com/mnarla/Paddock-Scout" target="_blank" rel="noopener noreferrer" class="project-link">
                   Paddock Scout <span class="card-arrow">↗</span>
                 </a>
-              </h3>
+              </h2>
               <p class="project-desc">
                 Regulation-aware F1 race prediction engine using temporally-weighted Random Forests and real-time telemetry ingestion. Built with an autonomous news intelligence agent that scans technical upgrades via DuckDuckGo without external API costs to dynamically adjust model weights.
               </p>
@@ -492,123 +306,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Tech Stack Section -->
-    <section id="skills" class="section skills-section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-meta">
-            <span class="section-category">STACK</span>
-          </div>
-          <h2 class="section-title">TECH STACK</h2>
-        </div>
-
-        <div class="skills-matrix-grid">
-          <!-- Col 1: Core Languages -->
-          <div class="matrix-card">
-            <div class="matrix-card-header">
-              <h3>LANGUAGES</h3>
-            </div>
-            <ul class="matrix-list">
-              <li>Python <span class="skill-lvl">Primary</span></li>
-              <li>C / Assembly <span class="skill-lvl">RISC-V</span></li>
-              <li>Java</li>
-              <li>SQL <span class="skill-lvl">PostgreSQL / SQLite</span></li>
-              <li>Ruby</li>
-              <li>JavaScript / HTML / CSS</li>
-            </ul>
-          </div>
-
-          <!-- Col 2: AI, Logic & Agents -->
-          <div class="matrix-card highlight-matrix">
-            <div class="matrix-card-header">
-              <h3>AI & NEUROSYMBOLIC</h3>
-            </div>
-            <ul class="matrix-list">
-              <li>LangGraph & LangChain</li>
-              <li>SWI-Prolog & Janus</li>
-              <li>PyTorch & TensorFlow</li>
-              <li>Local Inference <span class="skill-lvl">Qwen3</span></li>
-              <li>RAG & Relevancy Scoring</li>
-              <li>Scikit-learn & Pandas</li>
-            </ul>
-          </div>
-
-          <!-- Col 3: Vision & Spatial -->
-          <div class="matrix-card">
-            <div class="matrix-card-header">
-              <h3>VISION & SPATIAL</h3>
-            </div>
-            <ul class="matrix-list">
-              <li>OpenCV</li>
-              <li>MediaPipe Pose Kinematics</li>
-              <li>Homography Estimation</li>
-              <li>Video Stitching Pipelines</li>
-              <li>CNNs & Image Classification</li>
-            </ul>
-          </div>
-
-          <!-- Col 4: Infra & Distributed Systems -->
-          <div class="matrix-card">
-            <div class="matrix-card-header">
-              <h3>INFRA & SYSTEMS</h3>
-            </div>
-            <ul class="matrix-list">
-              <li>Kubernetes & Nautilus Cluster</li>
-              <li>Ruby on Rails & Sidekiq</li>
-              <li>AWS & Google Cloud</li>
-              <li>Model Context Protocol (MCP)</li>
-              <li>Linux / Unix Shell & Git</li>
-              <li>Raspberry Pi Embedded</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <div class="contact-box">
-          <div class="contact-header">
-            <div class="section-meta">
-              <span class="section-category">CONTACT</span>
-            </div>
-            <h2 class="contact-headline">LET'S CONNECT.</h2>
-            <p class="contact-sub">
-              Open to high-impact software engineering internships, AI research collaborations, and systems development.
-            </p>
-          </div>
-
-          <div class="contact-actions-grid">
-            <div class="contact-channel-card">
-              <div class="channel-value">narla.mayank@gmail.com</div>
-              <button class="btn btn-secondary btn-sm" id="copy-email-btn" data-email="narla.mayank@gmail.com">
-                <span id="copy-text">COPY EMAIL</span> <span class="btn-arrow">📋</span>
-              </button>
-            </div>
-
-            <div class="contact-channel-card">
-              <div class="channel-links">
-                <a href="https://github.com/mnarla" target="_blank" rel="noopener noreferrer" class="channel-link-btn">
-                  GITHUB <span>↗</span>
-                </a>
-                <a href="https://www.linkedin.com/in/mayank-narla-4761b4366" target="_blank" rel="noopener noreferrer" class="channel-link-btn">
-                  LINKEDIN <span>↗</span>
-                </a>
-              </div>
-            </div>
-
-            <div class="contact-channel-card">
-              <div class="channel-value">Full CV / Resume</div>
-              <a href="Mayank_Narla_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                VIEW RESUME (PDF) <span class="btn-arrow">↗</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
@@ -624,9 +321,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Toast Notification -->
-  <div id="toast" class="toast" role="status" aria-live="polite">Email copied to clipboard!</div>
 
   <script type="module" src="js/main.js"></script>
 </body>
