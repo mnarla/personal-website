@@ -21,12 +21,12 @@
   --shadow-card-hover: 0 16px 32px rgba(0, 0, 0, 0.4);
   --shadow-card-glass: 0 8px 32px rgba(0, 0, 0, 0.4);
 
-  /* Primary Accent: Rich Cabernet Wine Red */
-  --accent: #E53E57;
-  --accent-hover: #F0566E;
-  --accent-dim: rgba(229, 62, 87, 0.12);
-  --accent-glow: rgba(229, 62, 87, 0.25);
-  --accent-line: rgba(229, 62, 87, 0.6);
+  /* Primary Accent: Deep Oxblood Burgundy Swatch (#5E212A) */
+  --accent: #5E212A;
+  --accent-hover: #752B36;
+  --accent-dim: rgba(94, 33, 42, 0.25);
+  --accent-glow: rgba(94, 33, 42, 0.45);
+  --accent-line: rgba(94, 33, 42, 0.8);
 
   /* Status Colors */
   --color-status-active: #10B981;
@@ -36,7 +36,7 @@
   --text-headline: #F4F4F2;
   --text-body: #9E9EA4;
   --text-muted: #8E909B;
-  --text-accent: #E53E57;
+  --text-accent: #D97784;
   --text-inverse: #FFFFFF;
 
   /* Typography Scale */

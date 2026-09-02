@@ -155,7 +155,7 @@
 
 .exp-card:hover {
   background: rgba(30, 32, 40, 0.75);
-  border-color: rgba(229, 62, 87, 0.35);
+  border-color: rgba(94, 33, 42, 0.6);
   transform: translateY(-2px);
   box-shadow: var(--shadow-card-hover);
 }
@@ -163,7 +163,7 @@
 /* Technical top accent border instead of generic AI side-tab stripe */
 .highlight-card {
   border-top: 2px solid var(--accent);
-  background: linear-gradient(180deg, rgba(229, 62, 87, 0.08) 0%, rgba(24, 25, 31, 0.6) 100%);
+  background: linear-gradient(180deg, rgba(94, 33, 42, 0.18) 0%, rgba(24, 25, 31, 0.6) 100%);
 }
 
 .exp-header {
@@ -275,7 +275,7 @@
 
 .project-card:hover {
   background: rgba(30, 32, 40, 0.75);
-  border-color: rgba(229, 62, 87, 0.35);
+  border-color: rgba(94, 33, 42, 0.6);
   transform: translateY(-4px);
   box-shadow: var(--shadow-card-hover);
 }
@@ -513,14 +513,14 @@
 
 .matrix-card:hover {
   background: rgba(30, 32, 40, 0.75);
-  border-color: rgba(229, 62, 87, 0.35);
+  border-color: rgba(94, 33, 42, 0.6);
   transform: translateY(-2px);
   box-shadow: var(--shadow-card-hover);
 }
 
 .highlight-matrix {
   border-top: 2px solid var(--accent);
-  background: linear-gradient(180deg, rgba(229, 62, 87, 0.08) 0%, rgba(24, 25, 31, 0.6) 100%);
+  background: linear-gradient(180deg, rgba(94, 33, 42, 0.18) 0%, rgba(24, 25, 31, 0.6) 100%);
 }
 
 .matrix-card-header {
@@ -635,7 +635,7 @@
 
 .contact-channel-card:hover {
   background: rgba(26, 28, 36, 0.7);
-  border-color: rgba(229, 62, 87, 0.35);
+  border-color: rgba(94, 33, 42, 0.6);
   transform: translateY(-2px);
   box-shadow: var(--shadow-card-glass);
 }
