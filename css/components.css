@@ -39,10 +39,10 @@
 
 .btn-secondary:hover {
   background: rgba(34, 36, 45, 0.8);
-  border-color: rgba(255, 30, 86, 0.4);
+  border-color: rgba(255, 69, 58, 0.4);
   color: var(--text-inverse);
   transform: translateY(-1px);
-  box-shadow: 0 0 16px rgba(255, 30, 86, 0.15);
+  box-shadow: 0 0 16px rgba(255, 69, 58, 0.15);
 }
 
 .btn-sm {
@@ -72,7 +72,7 @@
 
 .metric-card:hover {
   background: rgba(30, 32, 40, 0.72);
-  border-color: rgba(255, 30, 86, 0.35);
+  border-color: rgba(255, 69, 58, 0.35);
   transform: translateX(4px);
   box-shadow: var(--shadow-card-hover);
 }
@@ -80,7 +80,7 @@
 /* Primary Metric: Technical top boundary accent rather than generic AI side-tab */
 .metric-primary {
   border-top: 2px solid var(--accent);
-  background: linear-gradient(135deg, rgba(24, 25, 31, 0.6) 0%, rgba(255, 30, 86, 0.06) 100%);
+  background: linear-gradient(135deg, rgba(24, 25, 31, 0.6) 0%, rgba(255, 69, 58, 0.06) 100%);
 }
 
 .metric-header {
