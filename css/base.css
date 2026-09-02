@@ -24,12 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   position: relative;
-  opacity: 0;
   transition: opacity 140ms ease;
-}
-
-body.page-loaded {
-  opacity: 1;
 }
 
 body.page-transitioning {
