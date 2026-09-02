@@ -144,22 +144,26 @@
 }
 
 .exp-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
+  background: rgba(24, 25, 31, 0.58);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 32px;
   transition: all var(--transition-normal);
+  box-shadow: var(--shadow-card-glass);
 }
 
 .exp-card:hover {
-  background: var(--bg-surface);
-  border-color: var(--border-highlight);
+  background: rgba(30, 32, 40, 0.75);
+  border-color: rgba(255, 30, 86, 0.35);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 /* Technical top accent border instead of generic AI side-tab stripe */
 .highlight-card {
   border-top: 2px solid var(--accent);
-  background: linear-gradient(180deg, rgba(255, 30, 86, 0.04) 0%, var(--bg-card) 100%);
+  background: linear-gradient(180deg, rgba(255, 30, 86, 0.08) 0%, rgba(24, 25, 31, 0.6) 100%);
 }
 
 .exp-header {
@@ -256,19 +260,22 @@
 }
 
 .project-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
+  background: rgba(24, 25, 31, 0.58);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: all var(--transition-normal);
   position: relative;
+  box-shadow: var(--shadow-card-glass);
 }
 
 .project-card:hover {
-  background: var(--bg-surface);
-  border-color: var(--border-highlight);
+  background: rgba(30, 32, 40, 0.75);
+  border-color: rgba(255, 30, 86, 0.35);
   transform: translateY(-4px);
   box-shadow: var(--shadow-card-hover);
 }
@@ -454,8 +461,10 @@
 .arch-diagram-wrap {
   min-height: 0;
   overflow: hidden;
-  background: var(--bg-canvas);
-  border: 1px solid var(--border-card);
+  background: rgba(16, 17, 22, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 14px;
   margin-top: 16px;
 }
@@ -493,21 +502,25 @@
 }
 
 .matrix-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
+  background: rgba(24, 25, 31, 0.58);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 28px 24px;
   transition: all var(--transition-normal);
+  box-shadow: var(--shadow-card-glass);
 }
 
 .matrix-card:hover {
-  background: var(--bg-surface);
-  border-color: var(--border-highlight);
+  background: rgba(30, 32, 40, 0.75);
+  border-color: rgba(255, 30, 86, 0.35);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .highlight-matrix {
   border-top: 2px solid var(--accent);
-  background: linear-gradient(180deg, rgba(255, 30, 86, 0.05) 0%, var(--bg-card) 100%);
+  background: linear-gradient(180deg, rgba(255, 30, 86, 0.08) 0%, rgba(24, 25, 31, 0.6) 100%);
 }
 
 .matrix-card-header {
@@ -569,12 +582,15 @@
    CONTACT / COMMS SECTION
    ========================================================================== */
 .contact-box {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
+  background: rgba(24, 25, 31, 0.58);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-top: 2px solid var(--accent);
   padding: 64px 48px;
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-card-hover);
 }
 
 .contact-header {
@@ -605,13 +621,23 @@
 }
 
 .contact-channel-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-card);
+  background: rgba(18, 19, 23, 0.52);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 16px;
+  transition: all var(--transition-normal);
+}
+
+.contact-channel-card:hover {
+  background: rgba(26, 28, 36, 0.7);
+  border-color: rgba(255, 30, 86, 0.35);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-glass);
 }
 
 .channel-label {

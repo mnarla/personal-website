@@ -25,6 +25,23 @@ body {
   overflow-x: hidden;
   position: relative;
   transition: opacity 140ms ease;
+  min-height: 100vh;
+}
+
+/* Ambient Depth Atmosphere (visible through frosted glass cards) */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  background-image: 
+    radial-gradient(circle at 14% 16%, rgba(255, 30, 86, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 86% 32%, rgba(255, 30, 86, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 50% 88%, rgba(255, 30, 86, 0.06) 0%, transparent 42%);
 }
 
 body.page-transitioning {
