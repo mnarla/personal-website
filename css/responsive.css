@@ -7,6 +7,10 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
   
   .skills-matrix-grid {
     grid-template-columns: repeat(2, 1fr);
