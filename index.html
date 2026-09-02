@@ -54,7 +54,7 @@
           <span class="telemetry-val">CA [PT]</span>
           <span class="telemetry-time" id="live-pt-clock">--:--:--</span>
         </div>
-        <a href="https://github.com/mnarla" target="_blank" rel="noopener noreferrer" class="hud-cta-btn" id="resume-quick-btn">
+        <a href="Mayank_Narla_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hud-cta-btn" id="resume-quick-btn">
           RESUME <span class="btn-arrow">↗</span>
         </a>
       </div>
@@ -309,9 +309,48 @@
                 <span>MediaPipe</span>
                 <span>Gemini API</span>
               </div>
-              <a href="https://github.com/mnarla/formova" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View Formova on GitHub">
-                GITHUB ↗
-              </a>
+              <div class="project-actions-row">
+                <button class="arch-toggle-btn" aria-expanded="false" data-target="arch-formova" aria-controls="arch-formova">
+                  <span class="arch-toggle-indicator">▸</span> ARCHITECTURE
+                </button>
+                <a href="https://github.com/mnarla/formova" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View Formova on GitHub">
+                  GITHUB ↗
+                </a>
+              </div>
+            </div>
+            <div id="arch-formova" class="arch-drawer" aria-hidden="true">
+              <div class="arch-diagram-wrap">
+                <div class="arch-header-meta">
+                  <span>PIPELINE // SPATIAL ESTIMATION</span>
+                  <span class="arch-pipeline-badge">LATENCY: 0MS LOCAL</span>
+                </div>
+                <svg class="arch-diagram-svg" viewBox="0 0 520 70" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Formova Architecture Diagram">
+                  <rect x="5" y="15" width="105" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="57" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">VIDEO STREAM</text>
+                  <text x="57" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">30+ FPS Input</text>
+
+                  <path d="M110 35 H132" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="132,32 137,35 132,38" fill="#FF1E56"/>
+
+                  <rect x="137" y="15" width="115" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="194" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">MEDIAPIPE POSE</text>
+                  <text x="194" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">33-Joint 3D Mesh</text>
+
+                  <path d="M252 35 H274" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="274,32 279,35 274,38" fill="#FF1E56"/>
+
+                  <rect x="279" y="15" width="115" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="336" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">KINEMATIC MATH</text>
+                  <text x="336" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Vector Joint Angles</text>
+
+                  <path d="M394 35 H416" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="416,32 421,35 416,38" fill="#FF1E56"/>
+
+                  <rect x="421" y="15" width="94" height="40" fill="#18191E" stroke="#10B981" stroke-width="1"/>
+                  <text x="468" y="33" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" text-anchor="middle">GEMINI API</text>
+                  <text x="468" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Instant Feedback</text>
+                </svg>
+              </div>
             </div>
           </article>
 
@@ -349,9 +388,48 @@
                 <span>Spotify API</span>
                 <span>Last.fm</span>
               </div>
-              <a href="https://github.com/mnarla/culler" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View Culler on GitHub">
-                GITHUB ↗
-              </a>
+              <div class="project-actions-row">
+                <button class="arch-toggle-btn" aria-expanded="false" data-target="arch-culler" aria-controls="arch-culler">
+                  <span class="arch-toggle-indicator">▸</span> ARCHITECTURE
+                </button>
+                <a href="https://github.com/mnarla/culler" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View Culler on GitHub">
+                  GITHUB ↗
+                </a>
+              </div>
+            </div>
+            <div id="arch-culler" class="arch-drawer" aria-hidden="true">
+              <div class="arch-diagram-wrap">
+                <div class="arch-header-meta">
+                  <span>PIPELINE // SELF-CALIBRATING AGENT</span>
+                  <span class="arch-pipeline-badge">LOCAL 8B INFERENCE</span>
+                </div>
+                <svg class="arch-diagram-svg" viewBox="0 0 520 70" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Culler Architecture Diagram">
+                  <rect x="5" y="15" width="105" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="57" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">STREAM TELEMETRY</text>
+                  <text x="57" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Spotify & Last.fm</text>
+
+                  <path d="M110 35 H132" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="132,32 137,35 132,38" fill="#FF1E56"/>
+
+                  <rect x="137" y="15" width="115" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="194" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">SQLITE RULE STORE</text>
+                  <text x="194" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Audit Track History</text>
+
+                  <path d="M252 35 H274" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="274,32 279,35 274,38" fill="#FF1E56"/>
+
+                  <rect x="279" y="15" width="115" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="336" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">QWEN3 8B (CoT)</text>
+                  <text x="336" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Chain-of-Thought</text>
+
+                  <path d="M394 35 H416" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="416,32 421,35 416,38" fill="#FF1E56"/>
+
+                  <rect x="421" y="15" width="94" height="40" fill="#18191E" stroke="#10B981" stroke-width="1"/>
+                  <text x="468" y="33" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" text-anchor="middle">CALIBRATION</text>
+                  <text x="468" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Cluster Feedback</text>
+                </svg>
+              </div>
             </div>
           </article>
 
@@ -388,9 +466,48 @@
                 <span>SQLite Cache</span>
                 <span>Live Telemetry</span>
               </div>
-              <a href="https://github.com/mnarla/wfmarket-advisor" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View WFM Advisor on GitHub">
-                GITHUB ↗
-              </a>
+              <div class="project-actions-row">
+                <button class="arch-toggle-btn" aria-expanded="false" data-target="arch-wfm" aria-controls="arch-wfm">
+                  <span class="arch-toggle-indicator">▸</span> ARCHITECTURE
+                </button>
+                <a href="https://github.com/mnarla/wfmarket-advisor" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View WFM Advisor on GitHub">
+                  GITHUB ↗
+                </a>
+              </div>
+            </div>
+            <div id="arch-wfm" class="arch-drawer" aria-hidden="true">
+              <div class="arch-diagram-wrap">
+                <div class="arch-header-meta">
+                  <span>PIPELINE // MULTI-NODE LANGGRAPH</span>
+                  <span class="arch-pipeline-badge">-70% CACHED SAVINGS</span>
+                </div>
+                <svg class="arch-diagram-svg" viewBox="0 0 520 70" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WFM Advisor Architecture Diagram">
+                  <rect x="5" y="15" width="105" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="57" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">MARKET API</text>
+                  <text x="57" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Live In-Game Data</text>
+
+                  <path d="M110 35 H132" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="132,32 137,35 132,38" fill="#FF1E56"/>
+
+                  <rect x="137" y="15" width="115" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="194" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">SQLITE CACHE</text>
+                  <text x="194" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Conditional Tracking</text>
+
+                  <path d="M252 35 H274" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="274,32 279,35 274,38" fill="#FF1E56"/>
+
+                  <rect x="279" y="15" width="115" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="336" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">LANGGRAPH</text>
+                  <text x="336" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Trend·Vault·Patch</text>
+
+                  <path d="M394 35 H416" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="416,32 421,35 416,38" fill="#FF1E56"/>
+
+                  <rect x="421" y="15" width="94" height="40" fill="#18191E" stroke="#10B981" stroke-width="1"/>
+                  <text x="468" y="33" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" text-anchor="middle">SYNTHESIS</text>
+                  <text x="468" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">SELL / HOLD Signal</text>
+                </svg>
+              </div>
             </div>
           </article>
 
@@ -428,9 +545,48 @@
                 <span>Autonomous Scraping</span>
                 <span>CI/CD</span>
               </div>
-              <a href="https://github.com/mnarla/Paddock-Scout" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View Paddock Scout on GitHub">
-                GITHUB ↗
-              </a>
+              <div class="project-actions-row">
+                <button class="arch-toggle-btn" aria-expanded="false" data-target="arch-paddock" aria-controls="arch-paddock">
+                  <span class="arch-toggle-indicator">▸</span> ARCHITECTURE
+                </button>
+                <a href="https://github.com/mnarla/Paddock-Scout" target="_blank" rel="noopener noreferrer" class="project-ext-btn" aria-label="View Paddock Scout on GitHub">
+                  GITHUB ↗
+                </a>
+              </div>
+            </div>
+            <div id="arch-paddock" class="arch-drawer" aria-hidden="true">
+              <div class="arch-diagram-wrap">
+                <div class="arch-header-meta">
+                  <span>PIPELINE // TELEMETRY & WEB AGENT</span>
+                  <span class="arch-pipeline-badge">$0 API OVERHEAD</span>
+                </div>
+                <svg class="arch-diagram-svg" viewBox="0 0 520 70" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Paddock Scout Architecture Diagram">
+                  <rect x="5" y="15" width="105" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="57" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">TELEMETRY INGEST</text>
+                  <text x="57" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">CI/CD Automation</text>
+
+                  <path d="M110 35 H132" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="132,32 137,35 132,38" fill="#FF1E56"/>
+
+                  <rect x="137" y="15" width="115" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="194" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">DDG WEB AGENT</text>
+                  <text x="194" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Autonomous Scraper</text>
+
+                  <path d="M252 35 H274" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="274,32 279,35 274,38" fill="#FF1E56"/>
+
+                  <rect x="279" y="15" width="115" height="40" fill="#18191E" stroke="#282A34" stroke-width="1"/>
+                  <text x="336" y="33" fill="#F4F4F2" font-family="JetBrains Mono, monospace" font-size="9" font-weight="600" text-anchor="middle">TEMPORAL WEIGHTS</text>
+                  <text x="336" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Dynamic Calibrator</text>
+
+                  <path d="M394 35 H416" stroke="#FF1E56" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <polygon points="416,32 421,35 416,38" fill="#FF1E56"/>
+
+                  <rect x="421" y="15" width="94" height="40" fill="#18191E" stroke="#10B981" stroke-width="1"/>
+                  <text x="468" y="33" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="9" font-weight="700" text-anchor="middle">RANDOM FOREST</text>
+                  <text x="468" y="45" fill="#8E909B" font-family="JetBrains Mono, monospace" font-size="8" text-anchor="middle">Race Predictions</text>
+                </svg>
+              </div>
             </div>
           </article>
         </div>
@@ -554,8 +710,8 @@
             <div class="contact-channel-card">
               <div class="channel-label">CREDENTIALS</div>
               <div class="channel-value">Full CV / Experience History</div>
-              <a href="https://github.com/mnarla" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
-                VIEW RESUME <span class="btn-arrow">↗</span>
+              <a href="Mayank_Narla_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                VIEW RESUME (PDF) <span class="btn-arrow">↗</span>
               </a>
             </div>
           </div>

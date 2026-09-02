@@ -399,6 +399,89 @@
   color: var(--accent);
 }
 
+.project-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Expandable Architecture Drawer */
+.arch-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  padding: 6px 12px;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.arch-toggle-btn:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--border-highlight);
+  color: var(--text-headline);
+}
+
+.arch-toggle-btn[aria-expanded="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.arch-toggle-indicator {
+  font-size: var(--text-xs);
+}
+
+.arch-drawer {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 280ms var(--ease-snap), opacity 200ms ease;
+  width: 100%;
+}
+
+.arch-drawer.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.arch-diagram-wrap {
+  min-height: 0;
+  overflow: hidden;
+  background: var(--bg-canvas);
+  border: 1px solid var(--border-card);
+  padding: 14px;
+  margin-top: 16px;
+}
+
+.arch-header-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.arch-pipeline-badge {
+  color: var(--color-status-active);
+  font-weight: 700;
+}
+
+.arch-diagram-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ==========================================================================
    TECHNICAL SKILLS MATRIX
    ========================================================================== */
