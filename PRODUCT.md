@@ -32,7 +32,7 @@ Evaluated rapidly (30–60 seconds) by busy technical recruiters and engineers s
 ## Brand Commitments
 
 - **Tone & Vibe:** Bold, motorsport-adjacent kinetic precision, high data density, and confident negative space.
-- **Color Identity:** Deep textured charcoal canvas (`#121316`), dark graphite cards (`#18191E`), and brilliant scarlet red (`#FF2400`) accents limited to ~5% visual weight.
+- **Color Identity:** Deep textured charcoal canvas (`#121316`), dark graphite cards (`#18191E`), and rich cabernet wine red (`#E53E57`) accents limited to ~5% visual weight.
 - **Typography:** Heavy condensed display headers (*Barlow Condensed*), clean human body copy (*Plus Jakarta Sans*), and tabular monospace telemetry labels (*JetBrains Mono*).
 - **Voice:** Direct, human-voiced, punchy, and devoid of corporate fluff.
 
