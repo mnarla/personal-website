@@ -56,8 +56,8 @@ button {
 .cursor-crosshair {
   font-family: var(--font-mono);
   color: var(--text-inverse);
-  font-size: var(--text-sm);
-  font-weight: 700;
+  font-size: var(--text-base);
+  line-height: 1;
 }
 
 .cursor-label {

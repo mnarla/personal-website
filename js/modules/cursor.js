@@ -37,13 +37,13 @@ export function initCustomCursor() {
         crosshair.textContent = '✦';
         label.textContent = 'ACTIVATE';
       } else {
-        crosshair.textContent = '+';
+        crosshair.textContent = '•';
         label.textContent = 'INSPECT';
       }
     });
 
     el.addEventListener('mouseleave', () => {
-      crosshair.textContent = '+';
+      crosshair.textContent = '•';
       label.textContent = '';
     });
   });
