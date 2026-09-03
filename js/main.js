@@ -9,6 +9,7 @@ import { initCustomCursor } from './modules/cursor.js';
 import { initEmailCopy } from './modules/clipboard.js';
 import { initArchitectureDrawers } from './modules/architecture-drawer.js';
 import { initPageTransitions } from './modules/page-transition.js';
+import { initScrollReveal } from './modules/scroll-reveal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initPageTransitions();
@@ -17,4 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   initEmailCopy();
   initArchitectureDrawers();
+  initScrollReveal();
 });

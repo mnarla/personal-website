@@ -664,18 +664,55 @@
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   font-weight: 700;
-  padding: 8px 14px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
+  padding: 8px 16px;
+  background: rgba(24, 25, 31, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-headline);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
-  transition: all var(--transition-fast);
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all var(--transition-normal);
+}
+
+.channel-link-btn span {
+  display: inline-block;
+  transition: transform var(--transition-fast);
 }
 
 .channel-link-btn:hover {
-  background: var(--accent);
+  background: rgba(34, 36, 45, 0.85);
+  border-color: rgba(117, 43, 54, 0.9);
   color: var(--text-inverse);
-  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(94, 33, 42, 0.4);
+}
+
+.channel-link-btn:hover span {
+  transform: translate(2px, -2px);
+}
+
+/* Subtle accent hover for Resume & Copy buttons on Contact page */
+.contact-channel-card .btn-primary {
+  transition: all var(--transition-normal);
+}
+
+.contact-channel-card .btn-primary:hover {
+  background: var(--accent-hover);
+  border-color: rgba(180, 60, 78, 0.8);
+  box-shadow: 0 0 20px rgba(94, 33, 42, 0.55), 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.contact-channel-card .btn-secondary {
+  transition: all var(--transition-normal);
+}
+
+.contact-channel-card .btn-secondary:hover {
+  background: rgba(34, 36, 45, 0.85);
+  border-color: rgba(117, 43, 54, 0.8);
+  color: var(--text-inverse);
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(94, 33, 42, 0.35);
 }
