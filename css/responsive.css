@@ -34,11 +34,16 @@
     grid-template-columns: 1fr;
   }
 
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
   .contact-box {
     padding: 36px 24px;
   }
 
-  .exp-card {
+  .exp-card,
+  .credential-card {
     padding: 24px;
   }
 
@@ -55,7 +60,8 @@
   .btn-sm,
   .hud-cta-btn,
   .channel-link-btn,
-  .project-ext-btn {
+  .project-ext-btn,
+  .cred-verify-btn {
     min-height: 44px;
     display: inline-flex;
     align-items: center;
@@ -80,7 +86,8 @@
 
   /* Disable disorienting infinite loops & cursor tracking */
   .ticker-track,
-  .status-dot {
+  .status-dot,
+  .status-dot-amber {
     animation: none !important;
   }
 
@@ -93,6 +100,7 @@
   .btn-arrow,
   .metric-card,
   .exp-card,
+  .credential-card,
   .project-card,
   .card-arrow,
   .matrix-card,

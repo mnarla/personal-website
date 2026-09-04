@@ -16,6 +16,7 @@ export function initScrollReveal() {
     { container: '.hero-metrics-column', items: '.metric-card' },
     { container: '.experience-list', items: '.exp-card' },
     { container: '.skills-matrix-grid', items: '.matrix-card' },
+    { container: '.credentials-grid', items: '.credential-card' },
     { container: '.projects-grid', items: '.project-card' },
     { container: '.contact-actions-grid', items: '.contact-channel-card' },
   ];
