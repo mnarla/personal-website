@@ -204,3 +204,124 @@
   color: var(--accent);
   margin: 0 8px;
 }
+
+/* ==========================================================================
+   MOBILE FLOATING NAVIGATION DOCK
+   Native-app style thumb dock pinned to bottom of mobile viewports
+   ========================================================================== */
+
+.mobile-dock {
+  display: none;
+}
+
+.dock-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 440px;
+  background: rgba(18, 19, 23, 0.92);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 40px;
+  padding: 5px 6px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.7), 0 0 1px rgba(255, 255, 255, 0.2);
+  gap: 3px;
+}
+
+.dock-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-height: 48px;
+  padding: 6px 3px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  gap: 4px;
+  transition: all var(--transition-fast);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.dock-icon {
+  width: 20px;
+  height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  flex-shrink: 0;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  transition: stroke var(--transition-fast), transform var(--transition-fast);
+}
+
+.dock-link:hover,
+.dock-link:focus-visible {
+  color: var(--text-headline);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dock-link:active {
+  transform: scale(0.92);
+}
+
+/* Active State with crimson accent glow */
+.dock-link.active {
+  color: var(--text-headline);
+  background: linear-gradient(180deg, rgba(94, 33, 42, 0.5) 0%, rgba(94, 33, 42, 0.2) 100%);
+  border: 1px solid rgba(94, 33, 42, 0.7);
+  box-shadow: 0 0 14px rgba(94, 33, 42, 0.35);
+}
+
+.dock-link.active .dock-icon {
+  stroke: var(--accent);
+  color: var(--accent);
+  filter: drop-shadow(0 0 6px var(--accent-glow));
+}
+
+.dock-link.active .dock-label {
+  color: var(--text-headline);
+  font-weight: 700;
+}
+
+.dock-link.active::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  width: 4px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--accent);
+}
+
+@media (max-width: 768px) {
+  .mobile-dock {
+    display: flex;
+    position: fixed;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 12px;
+    pointer-events: none;
+  }
+
+  .dock-pill {
+    pointer-events: auto;
+  }
+}
+
+

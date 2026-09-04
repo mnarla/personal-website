@@ -43,3 +43,5 @@ pnpm-debug.log*
 node_modules/
 dist/
 .cache/
+__pycache__/
+*.pyc

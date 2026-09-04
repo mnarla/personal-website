@@ -22,8 +22,16 @@
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-bottom: 74px;
+  }
+
   .hud-nav, .hud-telemetry-pill {
     display: none;
+  }
+
+  .toast {
+    bottom: 84px !important;
   }
 
   .projects-grid {
@@ -72,6 +80,12 @@
 
   .project-footer {
     gap: 16px;
+  }
+}
+
+@media (max-width: 580px) {
+  .hud-status-badge {
+    display: none;
   }
 }
 

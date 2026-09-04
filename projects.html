@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Projects — Mayank Narla</title>
   <meta name="description" content="Selected software engineering projects, autonomous agents, and telemetry systems built by Mayank Narla.">
   <meta name="theme-color" content="#121316">
@@ -11,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Chivo:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css?v=20260904">
 </head>
 <body class="telemetry-theme">
   <!-- Custom Kinetic Cursor -->
@@ -321,6 +324,49 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating Mobile Navigation Dock -->
+  <nav class="mobile-dock" aria-label="Mobile Navigation Dock">
+    <div class="dock-pill">
+      <a href="index.html" class="dock-link" aria-label="Home">
+        <svg class="dock-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 9.5L12 3l9 6.5V20a1.5 1.5 0 0 1-1.5 1.5H4.5A1.5 1.5 0 0 1 3 20V9.5z"/>
+          <polyline points="9 21.5 9 12 15 12 15 21.5"/>
+        </svg>
+        <span class="dock-label">HOME</span>
+      </a>
+      <a href="about.html" class="dock-link" aria-label="About">
+        <svg class="dock-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span class="dock-label">ABOUT</span>
+      </a>
+      <a href="projects.html" class="dock-link active" aria-label="Projects">
+        <svg class="dock-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        </svg>
+        <span class="dock-label">PROJECTS</span>
+      </a>
+      <a href="resume.html" class="dock-link" aria-label="Resume">
+        <svg class="dock-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+        <span class="dock-label">RESUME</span>
+      </a>
+      <a href="contact.html" class="dock-link" aria-label="Contact">
+        <svg class="dock-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <span class="dock-label">CONTACT</span>
+      </a>
+    </div>
+  </nav>
 
   <script type="module" src="js/main.js"></script>
 </body>
